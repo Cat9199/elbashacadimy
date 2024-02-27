@@ -1,0 +1,56 @@
+main .content {
+    padding: 0;
+}
+
+.dashboard-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: 0 0 10% 10%;
+    background: linear-gradient(45deg, var(--blue-3, #2E6FF4), #a138f1, #6617ed);
+    background-size: 300% 300%;
+    animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.dashboard-bg .dashboard-info {
+    text-align: center;
+}
+
+.dashboard-bg .dashboard-info img {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--blue-4, #89BAF8);
+}
+
+.dashboard-bg .dashboard-info .info {
+    margin-top: -10px;
+}
+
+.dashboard-bg .dashboard-info .info h3 {
+    font-size: 24px;
+    color: var(--neutral-10);
+    font-weight: 500;
+}
+
+.dashboard-bg .dashboard-info .info p {
+    color: var(--neutral-8, #E0E6EE);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.complete-your-courses {
+    padding: 10px 20px;
+}
